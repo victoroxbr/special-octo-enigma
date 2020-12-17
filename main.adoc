@@ -4,10 +4,6 @@ An introduction to http://asciidoc.org[AsciiDoc].
 
 == First Section
 
-* item 1
-* item 2
-
-[source,bash]
-echo "Bonjour ENSG !"
+Me trying to debug openGL.
 
 image::https://puu.sh/GYnKI.gif[Cat]
