@@ -1,6 +1,0 @@
-[build]
-command = "rake deploy:netlify"
-publish = "dist"
-
-[build.environment]
-RUBY_VERSION = "2.4.3"
