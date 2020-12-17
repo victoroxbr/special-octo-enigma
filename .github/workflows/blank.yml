@@ -11,6 +11,7 @@ jobs:
     name: "Deploy to netlify"
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: sudo apt-get update -y && sudo apt-get install -y asciidoctor
       - run: make all
       - uses: jsmrcaga/action-netlify-deploy@v1.1.0
