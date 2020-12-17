@@ -1,0 +1,16 @@
+name: Deploy
+on: [push]
+jobs:
+  deploy:
+    name: "Deploy to netlify"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: sudo apt-get update -y && sudo apt-get install -y asciidoctor
+      - run: make all
+      - uses: netlify/actions/cli@master
+        with:
+          args: deploy --prod --dir=./dist/
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

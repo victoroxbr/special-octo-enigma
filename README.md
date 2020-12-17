@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e14e7184-10c0-4a9d-a85c-b6f629975d7f/deploy-status)](https://app.netlify.com/sites/wonderful-kepler-bcc0e2/deploys)
 # special-octo-enigma
 
-Casse toi de mon github Vietos !
+https://wonderful-kepler-bcc0e2.netlify.app/
