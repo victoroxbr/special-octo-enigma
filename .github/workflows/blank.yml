@@ -10,7 +10,8 @@ jobs:
       - run: make all
       - uses: jsmrcaga/action-netlify-deploy@v1.1.0
         with:
-          NETLIFY_TOKEN_AUTH: ${{ secrets.NETLIFY_TOKEN_AUTH }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          build_directory: dist
+          NETLIFY_TOKEN_AUTH: ${{ prod.NETLIFY_TOKEN_AUTH }}
+          NETLIFY_SITE_ID: ${{ prod.NETLIFY_SITE_ID }}
+          build_directory: './dist'
+          publish-dir: './dist'
           NETLIFY_DEPLOY_TO_PROD: true
