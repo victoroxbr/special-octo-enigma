@@ -10,4 +10,4 @@ An introduction to http://asciidoc.org[AsciiDoc].
 [source,bash]
 echo "Bonjour ENSG !"
 
-image::1600108792052.gif[]
+image::https://puu.sh/GYnKI.gif[Cat]
